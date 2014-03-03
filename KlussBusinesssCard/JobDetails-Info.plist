@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>experiences</key>
+	<array>
+		<dict>
+			<key>companyName</key>
+			<string>H-E-B</string>
+			<key>startDate</key>
+			<string>1/2010</string>
+			<key>endDate</key>
+			<string>Present</string>
+			<key>jobTitle</key>
+			<string>Senior Developer</string>
+			<key>companyLogo</key>
+			<string>heb</string>
+			<key>jobDescription</key>
+			<string>Developed and supported multiple web and iOS applications using Java/Objective C. Technical lead for H­E­B’s customer facing mobile application currently developed for iOS and Android systems.</string>
+			<key>accomplishments</key>
+			<array>
+				<string>Worked on front end enhancements to H­E­B’s Own Brand Review web application that allows H­E­B partners to review over 18,000 products.</string>
+				<string>Part of a team that develop front end web application for application authorization system that controlled over 30 H­E­B internal systems.</string>
+				<string>Developed that main component for deal creation between H­E­B and vendors. Developed back end services using Java and Axis 2 for H­E­B’s Deals and Cost’s “Deal Builder” feature. This allowed over a 1,000 vendors to create and manage deals for over 46,000 products.</string>
+				<string>One of the core mobile developer on H­E­B’s Enterprise mobile launch to over 300 H­E­B stores. Released five initial applications dealing with sales reporting, submitting help desk tickets, employee hour tracking, and single sign on. Also supported and developed enhancements to these applications.</string>
+				<string>Built a prototype mobile application called Virtual Shopper that allowed over 5,000 corporate employees to scan for items and have their order delivered to them at work.</string>
+				<string>Lead a team of ten iOS and Android developers in creating H­E­B’s first public facing mobile application. The application allows users to search for store locations, view weekly ad information, gain access to store’s product catalog, sign up use H­E­B’s digital coupon program, manage and refill pharmacy prescriptions, create and maintain a digital shopping list, and pay using your H­E­B Mobile Wallet.</string>
+				<string>Mentored junior developers in their technical and personal skills.</string>
+			</array>
+		</dict>
+		<dict>
+			<key>companyLogo</key>
+			<string>accenture</string>
+			<key>companyName</key>
+			<string>Accenture</string>
+			<key>startDate</key>
+			<string>1/2009</string>
+			<key>endDate</key>
+			<string>12/2009</string>
+			<key>jobTitle</key>
+			<string>SAP Developer</string>
+			<key>jobDescription</key>
+			<string>Worked with a team building a new financial system for the USDA. I used classical and Object Oriented ABAP language to create conversion programs that would take financial data and convert it to their new SAP financial system.</string>
+			<key>accomplishments</key>
+			<array>
+				<string>Exposure to and help implement different software testing techniques (Unit and System Testing) within the SAPsystem.</string>
+				<string>Wrote several Technical Design solution documents</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
