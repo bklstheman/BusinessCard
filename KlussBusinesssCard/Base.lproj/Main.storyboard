@@ -221,7 +221,7 @@
             </objects>
             <point key="canvasLocation" x="304" y="-648"/>
         </scene>
-        <!--Contacts View Controller-->
+        <!--Contacts View Controller - Contact-->
         <scene sceneID="vJf-5B-8k1">
             <objects>
                 <viewController id="5AE-LC-B6f" customClass="ContactsViewController" sceneMemberID="viewController">
@@ -273,11 +273,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ksF-tf-bln"/>
+                    <navigationItem key="navigationItem" title="Contact" id="ksF-tf-bln"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hr-Xh-4MH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1561" y="-212"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jIP-jo-rWH">
+            <objects>
+                <viewController id="tXT-Hk-AG8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GkM-D2-aGS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ys3-Rg-78o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sxF-S0-6RT">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FkI-GW-d5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549" y="645"/>
         </scene>
         <!--Work Profile Table View Controller - Work History-->
         <scene sceneID="ro4-H5-Y3X">
@@ -364,7 +384,7 @@
             </objects>
             <point key="canvasLocation" x="570" y="1048"/>
         </scene>
-        <!--Side Project View Controller-->
+        <!--Side Project View Controller - Side Projects-->
         <scene sceneID="udJ-5T-bfk">
             <objects>
                 <viewController id="vOg-jI-BnT" customClass="SideProjectViewController" sceneMemberID="viewController">
@@ -402,7 +422,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bfc-k1-eZ8"/>
+                    <navigationItem key="navigationItem" title="Side Projects" id="bfc-k1-eZ8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNt-DK-F2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="bDs-Ej-MY8">
@@ -433,11 +453,11 @@
             </objects>
             <point key="canvasLocation" x="-321" y="1054"/>
         </scene>
-        <!--Navigation Controller - Side Project-->
+        <!--Navigation Controller - Side Projects-->
         <scene sceneID="dQf-nA-hlw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WAT-Gy-2SW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Side Project" id="fhb-6h-Pn9"/>
+                    <tabBarItem key="tabBarItem" title="Side Projects" id="fhb-6h-Pn9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aQU-cb-J9F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -452,11 +472,11 @@
             </objects>
             <point key="canvasLocation" x="116" y="338"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Contact-->
         <scene sceneID="g5G-5S-vAs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s3j-8k-Cdl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="BcB-zZ-6e0"/>
+                    <tabBarItem key="tabBarItem" title="Contact" id="BcB-zZ-6e0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="22C-8F-bCe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
