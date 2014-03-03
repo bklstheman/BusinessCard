@@ -100,11 +100,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		443F7A1618C5040300EC4C6F /* Business Card Layoug */ = {
+		443F7A1618C5040300EC4C6F /* Business Card Layout */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "Business Card Layoug";
+			name = "Business Card Layout";
 			sourceTree = "<group>";
 		};
 		6B22E34618C41A3600C38B91 /* About Me */ = {
@@ -149,7 +149,7 @@
 		6B9F00671897569F005BB743 /* KlussBusinesssCard */ = {
 			isa = PBXGroup;
 			children = (
-				443F7A1618C5040300EC4C6F /* Business Card Layoug */,
+				443F7A1618C5040300EC4C6F /* Business Card Layout */,
 				6B22E34618C41A3600C38B91 /* About Me */,
 				6B9F00E618B312DC005BB743 /* Work Info */,
 				6B9F0099189DD102005BB743 /* Contacts */,
