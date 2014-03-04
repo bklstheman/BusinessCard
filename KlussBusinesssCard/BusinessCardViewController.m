@@ -11,6 +11,7 @@
 @interface BusinessCardViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *faceImageView;
+@property BOOL isFranklinFace;
 @end
 
 @implementation BusinessCardViewController
@@ -30,10 +31,41 @@
 	// Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)faceImageTapped:(UITapGestureRecognizer *)sender {
+    NSLog(@"Face image tapped");
+    
+    /*
+    [UIView beginAnimations:Nil context:UIGraphicsGetCurrentContext()];
+    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.faceImageView cache:YES];
+    [UIView commitAnimations];
+    */
+
+    [UIView animateWithDuration:0.5 animations:^{
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.faceImageView cache:YES];
+        if (self.isFranklinFace) {
+            self.faceImageView.image = [UIImage imageNamed:@"facephotocard"];
+            self.isFranklinFace = NO;
+        } else {
+            self.faceImageView.image = [UIImage imageNamed:@"franklinface"];
+            self.isFranklinFace = YES;
+        }
+
+    } completion:^(BOOL finished) {
+    }];
+        
+
 }
+
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+
+
+
 
 @end

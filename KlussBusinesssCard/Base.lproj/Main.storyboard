@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tXT-Hk-AG8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -316,9 +316,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facephotocard" translatesAutoresizingMaskIntoConstraints="NO" id="e0D-Ze-PBZ">
-                                <rect key="frame" x="21" y="-12" width="121" height="130"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facephotocard" translatesAutoresizingMaskIntoConstraints="NO" id="e0D-Ze-PBZ">
+                                <rect key="frame" x="20" y="30" width="121" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gIl-71-rzl" appends="YES" id="gZG-Ov-xlv"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -330,8 +334,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FkI-GW-d5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gIl-71-rzl">
+                    <connections>
+                        <action selector="faceImageTapped:" destination="tXT-Hk-AG8" id="nSt-NB-aAC"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1037" y="627"/>
+            <point key="canvasLocation" x="1185" y="614"/>
         </scene>
         <!--Work Profile Table View Controller - Work History-->
         <scene sceneID="ro4-H5-Y3X">

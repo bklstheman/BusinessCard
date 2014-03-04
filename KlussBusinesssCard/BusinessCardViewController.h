@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BusinessCardViewController : UIViewController
+@interface BusinessCardViewController : UIViewController <UIGestureRecognizerDelegate>
 
 @end
