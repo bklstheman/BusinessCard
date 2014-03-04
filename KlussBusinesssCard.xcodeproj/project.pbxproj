@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B22E34318C3FDD300C38B91 /* WorkProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B22E34218C3FDD300C38B91 /* WorkProfileDetailViewController.m */; };
+		6B8BC2F718C57193006539A1 /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */; };
 		6B9F00621897569F005BB743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9F00611897569F005BB743 /* Foundation.framework */; };
 		6B9F00641897569F005BB743 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9F00631897569F005BB743 /* CoreGraphics.framework */; };
 		6B9F00661897569F005BB743 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9F00651897569F005BB743 /* UIKit.framework */; };
@@ -44,6 +45,8 @@
 		2B2B707EF2C14E7C852317E5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B22E34118C3FDD300C38B91 /* WorkProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkProfileDetailViewController.h; sourceTree = "<group>"; };
 		6B22E34218C3FDD300C38B91 /* WorkProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkProfileDetailViewController.m; sourceTree = "<group>"; };
+		6B8BC2F518C57193006539A1 /* BusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardViewController.h; sourceTree = "<group>"; };
+		6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardViewController.m; sourceTree = "<group>"; };
 		6B9F005E1897569F005BB743 /* KlussBusinesssCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KlussBusinesssCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9F00611897569F005BB743 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B9F00631897569F005BB743 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +106,8 @@
 		443F7A1618C5040300EC4C6F /* Business Card Layout */ = {
 			isa = PBXGroup;
 			children = (
+				6B8BC2F518C57193006539A1 /* BusinessCardViewController.h */,
+				6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */,
 			);
 			name = "Business Card Layout";
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B8BC2F718C57193006539A1 /* BusinessCardViewController.m in Sources */,
 				6B9F00EF18B44F50005BB743 /* WorkProfileCell.m in Sources */,
 				6B9F00E918B31301005BB743 /* WorkProfile.m in Sources */,
 				6B9F00721897569F005BB743 /* AppDelegate.m in Sources */,
