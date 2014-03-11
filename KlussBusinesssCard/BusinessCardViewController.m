@@ -8,6 +8,7 @@
 
 #import "BusinessCardViewController.h"
 #import "BusinessCardMailViewController.h"
+#import "ContactHelper.h"
 
 @interface BusinessCardViewController ()<MFMailComposeViewControllerDelegate>
 
@@ -35,6 +36,9 @@
     BusinessCardMailViewController *bcMailVC = [BusinessCardMailViewController createBusinessCardMail:self];
     [self presentViewController:bcMailVC animated:YES completion:nil];
 }
+- (IBAction)phoneLabelTApped:(id)sender {
+    [ContactHelper dialBusinessPhone];
+}
 
 - (IBAction)faceImageTapped:(UITapGestureRecognizer *)sender {
     NSLog(@"Face image tapped");
@@ -51,8 +55,6 @@
 
     } completion:^(BOOL finished) {
     }];
-        
-
 }
 
 -(BOOL)shouldAutorotate {

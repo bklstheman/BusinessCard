@@ -328,6 +328,16 @@
                                     <outletCollection property="gestureRecognizers" destination="gIl-71-rzl" appends="YES" id="gZG-Ov-xlv"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(210) 446-9440" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvC-CJ-5l6">
+                                <rect key="frame" x="3" y="279" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YNx-0b-Tij" appends="YES" id="heG-JM-2un"/>
+                                </connections>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -346,6 +356,11 @@
                 <tapGestureRecognizer id="0Wz-qk-CRA">
                     <connections>
                         <action selector="emailLabelTapped:" destination="tXT-Hk-AG8" id="00P-iF-lZc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="YNx-0b-Tij">
+                    <connections>
+                        <action selector="phoneLabelTApped:" destination="tXT-Hk-AG8" id="mYd-si-L0y"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
