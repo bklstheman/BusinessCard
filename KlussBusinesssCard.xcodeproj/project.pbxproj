@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6B22E34318C3FDD300C38B91 /* WorkProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B22E34218C3FDD300C38B91 /* WorkProfileDetailViewController.m */; };
 		6B8BC2F718C57193006539A1 /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */; };
+		6B8BC2FB18CE98CC006539A1 /* BusinessCardMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2FA18CE98CC006539A1 /* BusinessCardMailViewController.m */; };
 		6B9F00621897569F005BB743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9F00611897569F005BB743 /* Foundation.framework */; };
 		6B9F00641897569F005BB743 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9F00631897569F005BB743 /* CoreGraphics.framework */; };
 		6B9F00661897569F005BB743 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9F00651897569F005BB743 /* UIKit.framework */; };
@@ -47,6 +48,8 @@
 		6B22E34218C3FDD300C38B91 /* WorkProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkProfileDetailViewController.m; sourceTree = "<group>"; };
 		6B8BC2F518C57193006539A1 /* BusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardViewController.h; sourceTree = "<group>"; };
 		6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardViewController.m; sourceTree = "<group>"; };
+		6B8BC2F918CE98CC006539A1 /* BusinessCardMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardMailViewController.h; sourceTree = "<group>"; };
+		6B8BC2FA18CE98CC006539A1 /* BusinessCardMailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardMailViewController.m; sourceTree = "<group>"; };
 		6B9F005E1897569F005BB743 /* KlussBusinesssCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KlussBusinesssCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9F00611897569F005BB743 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B9F00631897569F005BB743 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,15 @@
 			name = "About Me";
 			sourceTree = "<group>";
 		};
+		6B8BC2F818CE989F006539A1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6B8BC2F918CE98CC006539A1 /* BusinessCardMailViewController.h */,
+				6B8BC2FA18CE98CC006539A1 /* BusinessCardMailViewController.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		6B9F00551897569F005BB743 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +166,7 @@
 		6B9F00671897569F005BB743 /* KlussBusinesssCard */ = {
 			isa = PBXGroup;
 			children = (
+				6B8BC2F818CE989F006539A1 /* Helpers */,
 				443F7A1618C5040300EC4C6F /* Business Card Layout */,
 				6B22E34618C41A3600C38B91 /* About Me */,
 				6B9F00E618B312DC005BB743 /* Work Info */,
@@ -375,6 +388,7 @@
 				6B9F00A218A32E50005BB743 /* SideProjectViewController.m in Sources */,
 				6B9F009C189DD122005BB743 /* ContactsViewController.m in Sources */,
 				6B22E34318C3FDD300C38B91 /* WorkProfileDetailViewController.m in Sources */,
+				6B8BC2FB18CE98CC006539A1 /* BusinessCardMailViewController.m in Sources */,
 				6B9F006E1897569F005BB743 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

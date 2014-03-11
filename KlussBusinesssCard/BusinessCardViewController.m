@@ -7,8 +7,9 @@
 //
 
 #import "BusinessCardViewController.h"
+#import "BusinessCardMailViewController.h"
 
-@interface BusinessCardViewController ()
+@interface BusinessCardViewController ()<MFMailComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *faceImageView;
 @property BOOL isFranklinFace;
@@ -30,16 +31,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+- (IBAction)emailLabelTapped:(UITapGestureRecognizer *)sender {
+    BusinessCardMailViewController *bcMailVC = [BusinessCardMailViewController createBusinessCardMail:self];
+    [self presentViewController:bcMailVC animated:YES completion:nil];
+}
 
 - (IBAction)faceImageTapped:(UITapGestureRecognizer *)sender {
     NSLog(@"Face image tapped");
-    
-    /*
-    [UIView beginAnimations:Nil context:UIGraphicsGetCurrentContext()];
-    [UIView setAnimationDuration:0.5];
-    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.faceImageView cache:YES];
-    [UIView commitAnimations];
-    */
 
     [UIView animateWithDuration:0.5 animations:^{
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.faceImageView cache:YES];
@@ -65,7 +63,11 @@
     return UIInterfaceOrientationMaskLandscape;
 }
 
+#pragma Mail Delegate methods
 
-
+-(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

@@ -10,6 +10,7 @@
 #import <LIALinkedInApplication.h>
 #import <LIALinkedInAuthorizationViewController.h>
 #import <LIALinkedInHttpClient.h>
+#import "BusinessCardMailViewController.m"
 
 @import MessageUI;
 
@@ -34,13 +35,9 @@
 }
 
 - (IBAction)emailButtonPressed:(UIButton *)sender {
-    MFMailComposeViewController *mailComposeVC = [MFMailComposeViewController new];
-    mailComposeVC.mailComposeDelegate = self;
-    [mailComposeVC setSubject:@"I would like to contact you!"];
-    [mailComposeVC setToRecipients:@[@"bklstheman2@gmail.com"]];
-    
-    [self presentViewController:mailComposeVC animated:YES completion:nil];
-}
+    BusinessCardMailViewController *bcMailVC = [BusinessCardMailViewController createBusinessCardMail:self];
+    [self presentViewController:bcMailVC animated:YES completion:nil];
+    }
 - (IBAction)phoneButtonPressed:(UIButton *)sender {
     
     if ([[UIDevice currentDevice].model isEqualToString:@"iPhone"]) {
