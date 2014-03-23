@@ -47,7 +47,7 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="BDS-80-8X7">
                                                     <rect key="frame" x="20" y="0.0" width="280" height="129"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <string key="text">I’m William Kluss, and I’m a software developer in San Antonio Texas. I have experience in web, mobile development and backend services. My current focus is in iOS development.</string>
+                                                    <string key="text">My name is William Kluss, and I’m a software developer in San Antonio Texas. I have experience in web, mobile development and backend services. My current focus is in iOS development.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -69,7 +69,7 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="q8W-bM-cvW">
                                                     <rect key="frame" x="20" y="5" width="300" height="149"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <string key="text">I developed and supported multiple web and iOS applications using Java/Objective C. On the current project I am on I am the technical lead for H-E-B's first public facing mobile application for both iOS and Android systems. </string>
+                                                    <string key="text">I developed and supported multiple web and iOS applications using Java/Objective C. In my current project I am the technical lead for H-E-B's first public facing mobile application for both iOS and Android systems. </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -163,7 +163,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creating &quot;Restful&quot; services for client side programs to use" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="281" translatesAutoresizingMaskIntoConstraints="NO" id="cH1-oT-G5D">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HUGE fan of Batman." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="281" translatesAutoresizingMaskIntoConstraints="NO" id="cH1-oT-G5D">
                                                     <rect key="frame" x="19" y="11" width="281" height="48"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -270,7 +270,7 @@
                                     <action selector="linkedinButtonPressed:" destination="5AE-LC-B6f" eventType="touchUpInside" id="Q6J-nL-dwa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact me if you want to know any more information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="309" translatesAutoresizingMaskIntoConstraints="NO" id="WY1-lJ-Tot">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact me if you want to know any more information." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="309" translatesAutoresizingMaskIntoConstraints="NO" id="WY1-lJ-Tot">
                                 <rect key="frame" x="2" y="80" width="309" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -523,7 +523,7 @@
         <scene sceneID="aB2-px-qRN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HOG-zM-dl9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Work History" id="Mcl-73-lxW"/>
+                    <tabBarItem key="tabBarItem" title="Work History" image="work" id="Mcl-73-lxW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5TL-a7-gbg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -542,7 +542,7 @@
         <scene sceneID="dQf-nA-hlw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WAT-Gy-2SW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Side Projects" id="fhb-6h-Pn9"/>
+                    <tabBarItem key="tabBarItem" title="Side Projects" image="sideprojects" id="fhb-6h-Pn9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aQU-cb-J9F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -561,7 +561,7 @@
         <scene sceneID="g5G-5S-vAs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s3j-8k-Cdl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contact" id="BcB-zZ-6e0"/>
+                    <tabBarItem key="tabBarItem" title="Contact" image="contact" id="BcB-zZ-6e0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="22C-8F-bCe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -580,7 +580,7 @@
         <scene sceneID="arT-Uh-EjY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H4J-qb-sFw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About Me" id="Mfk-3j-eSd"/>
+                    <tabBarItem key="tabBarItem" title="About Me" image="aboutme" id="Mfk-3j-eSd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MRz-sI-Q7D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -597,8 +597,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="aboutme" width="30" height="30"/>
+        <image name="contact" width="30" height="30"/>
         <image name="facephotocard" width="100" height="100"/>
+        <image name="sideprojects" width="30" height="30"/>
         <image name="tabletopic-icon" width="57" height="57"/>
+        <image name="work" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
