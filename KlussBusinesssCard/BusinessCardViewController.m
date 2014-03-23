@@ -13,25 +13,13 @@
 @interface BusinessCardViewController ()<MFMailComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *faceImageView;
+@property (weak, nonatomic) IBOutlet UILabel *bussinessCardName;
+@property (weak, nonatomic) IBOutlet UILabel *buisnessCardRole;
 @property BOOL isFranklinFace;
 @end
 
 @implementation BusinessCardViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
 - (IBAction)emailLabelTapped:(UITapGestureRecognizer *)sender {
     BusinessCardMailViewController *bcMailVC = [BusinessCardMailViewController createBusinessCardMail:self];
     [self presentViewController:bcMailVC animated:YES completion:nil];
@@ -48,9 +36,15 @@
         if (self.isFranklinFace) {
             self.faceImageView.image = [UIImage imageNamed:@"facephotocard"];
             self.isFranklinFace = NO;
+            self.bussinessCardName.text = @"William Kluss";
+            self.buisnessCardRole.text = @"Software Developer";
         } else {
             self.faceImageView.image = [UIImage imageNamed:@"franklinface"];
             self.isFranklinFace = YES;
+            self.buisnessCardRole.text = @"Professional Puppy";
+            self.bussinessCardName.text = @"Franklin Kluss";
+            [self.bussinessCardName updateConstraints];
+            
         }
 
     } completion:^(BOOL finished) {
