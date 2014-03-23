@@ -8,10 +8,6 @@
 
 #import "BusinessCardMailViewController.h"
 
-@interface BusinessCardMailViewController ()
-
-@end
-
 @implementation BusinessCardMailViewController
 
 +(BusinessCardMailViewController *)createBusinessCardMail:(id)delegate {

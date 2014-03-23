@@ -10,7 +10,7 @@
 #import <LIALinkedInApplication.h>
 #import <LIALinkedInAuthorizationViewController.h>
 #import <LIALinkedInHttpClient.h>
-#import "BusinessCardMailViewController.m"
+#import "BusinessCardMailViewController.h"
 
 @import MessageUI;
 

@@ -298,9 +298,6 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "William Kluss";
 				TargetAttributes = {
-					6B9F005D1897569F005BB743 = {
-						DevelopmentTeam = 9FZ6GL2KDX;
-					};
 					6B9F00811897569F005BB743 = {
 						TestTargetID = 6B9F005D1897569F005BB743;
 					};
