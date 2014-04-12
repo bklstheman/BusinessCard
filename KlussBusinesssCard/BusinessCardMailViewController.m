@@ -15,7 +15,7 @@
     
     bcMailVC.mailComposeDelegate = delegate;
     [bcMailVC setSubject:@"I would like to contact you!"];
-    [bcMailVC setToRecipients:@[@"bklstheman2@gmail.com"]];
+    [bcMailVC setToRecipients:@[@"klussdevelopment@gmail.com"]];
     return bcMailVC;
 }
 
