@@ -10,5 +10,4 @@
 @class WorkProfile;
 
 @interface WorkProfileTableViewController : UITableViewController
-
 @end

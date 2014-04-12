@@ -293,7 +293,7 @@
         <!--Business Card View Controller-->
         <scene sceneID="jIP-jo-rWH">
             <objects>
-                <viewController id="tXT-Hk-AG8" customClass="BusinessCardViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="businessCardLandscape" id="tXT-Hk-AG8" customClass="BusinessCardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GkM-D2-aGS"/>
                         <viewControllerLayoutGuide type="bottom" id="Ys3-Rg-78o"/>
@@ -329,6 +329,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.49019610879999997" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="0Wz-qk-CRA" appends="YES" id="Czo-nO-Rua"/>
@@ -345,8 +346,10 @@
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(210) 446-9440" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvC-CJ-5l6">
                                 <rect key="frame" x="3" y="279" width="120" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.5215686559677124" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.4901961088180542" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="YNx-0b-Tij" appends="YES" id="heG-JM-2un"/>
