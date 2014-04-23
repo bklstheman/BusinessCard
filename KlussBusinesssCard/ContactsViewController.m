@@ -16,6 +16,8 @@
 
 @interface ContactsViewController ()<MFMailComposeViewControllerDelegate>
 
+@property LIALinkedInHttpClient *client;
+
 @end
 
 @implementation ContactsViewController
@@ -32,6 +34,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    LIALinkedInApplication *application = [LIALinkedInApplication applicationWithRedirectURL:@"http://www.google.com" clientId:@"757zenj5pyzej5" clientSecret:@"26m1bADZD4JmxXIQ" state:@"DCEEFWF45453sdffef424" grantedAccess:@[@"r_emailaddress", @"r_basicprofile", @"r_contactinfo", @"r_network", @"w_messages", @"rw_nus"]];
+    
+    self.client = [LIALinkedInHttpClient clientForApplication:application presentingViewController:nil];
 }
 
 - (IBAction)emailButtonPressed:(UIButton *)sender {
@@ -49,33 +55,29 @@
     }
 }
 - (IBAction)linkedinButtonPressed:(UIButton *)sender {
-    //Need to open linked in
-    LIALinkedInHttpClient *linkedHTTPClient = [LIALinkedInHttpClient new];
-    [linkedHTTPClient getAuthorizationCode:^(NSString *code) {
-        [linkedHTTPClient getAccessToken:code success:^(NSDictionary *accessTokenData) {
-            NSString *accessToken = [accessTokenData objectForKey:@"access_token"];
-           // [self requestMeWithToken:accessToken];
-        }                   failure:^(NSError *error) {
+    
+    [self.client getAuthorizationCode:^(NSString *code) {
+        [self.client getAccessToken:code success:^(NSDictionary *accessTokenData) {
+            NSString *accessToken = accessTokenData[@"access_token"];
+            [self requestMeWithToken:accessToken];
+        } failure:^(NSError *error) {
             NSLog(@"Quering accessToken failed %@", error);
         }];
-    }                      cancel:^{
+    } cancel:^{
         NSLog(@"Authorization was cancelled by user");
-    }                     failure:^(NSError *error) {
+    } failure:^(NSError *error) {
         NSLog(@"Authorization failed %@", error);
     }];
 }
 
 
-/*
- - (LIALinkedInHttpClient *)client {
- LIALinkedInApplication *application = [LIALinkedInApplication applicationWithRedirectURL:@"http://www.ancientprogramming.com/liaexample"
- clientId:LINKEDIN_CLIENT_ID
- clientSecret:LINKEDIN_CLIENT_SECRET
- state:@"DCEEFWF45453sdffef424"
- grantedAccess:@[@"r_fullprofile", @"r_network"]];
- return [LIALinkedInHttpClient clientForApplication:application presentingViewController:nil];
- }
- */
+- (void)requestMeWithToken:(NSString *)accessToken {
+    [self.client GET:[NSString stringWithFormat:@"https://api.linkedin.com/v1/people/~?oauth2_access_token=%@&format=json", accessToken] parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *result) {
+        NSLog(@"current user %@", result);
+    }        failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"failed to fetch current user %@", error);
+    }];
+}
 
 #pragma Mail Delegate methods
 
