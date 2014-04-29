@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B22E34318C3FDD300C38B91 /* WorkProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B22E34218C3FDD300C38B91 /* WorkProfileDetailViewController.m */; };
+		6B7F313D19080F52009ED1EE /* LinkedInMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F313C19080F52009ED1EE /* LinkedInMessageViewController.m */; };
 		6B8BC2F718C57193006539A1 /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */; };
 		6B8BC2FB18CE98CC006539A1 /* BusinessCardMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2FA18CE98CC006539A1 /* BusinessCardMailViewController.m */; };
 		6B8BC2FE18CEA24B006539A1 /* ContactHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2FD18CEA24B006539A1 /* ContactHelper.m */; };
@@ -47,6 +48,8 @@
 		2B2B707EF2C14E7C852317E5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B22E34118C3FDD300C38B91 /* WorkProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkProfileDetailViewController.h; sourceTree = "<group>"; };
 		6B22E34218C3FDD300C38B91 /* WorkProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkProfileDetailViewController.m; sourceTree = "<group>"; };
+		6B7F313B19080F52009ED1EE /* LinkedInMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInMessageViewController.h; sourceTree = "<group>"; };
+		6B7F313C19080F52009ED1EE /* LinkedInMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedInMessageViewController.m; sourceTree = "<group>"; };
 		6B8BC2F518C57193006539A1 /* BusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardViewController.h; sourceTree = "<group>"; };
 		6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardViewController.m; sourceTree = "<group>"; };
 		6B8BC2F918CE98CC006539A1 /* BusinessCardMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardMailViewController.h; sourceTree = "<group>"; };
@@ -125,6 +128,15 @@
 			name = "About Me";
 			sourceTree = "<group>";
 		};
+		6B7F313A19080DA3009ED1EE /* LinkedIn */ = {
+			isa = PBXGroup;
+			children = (
+				6B7F313B19080F52009ED1EE /* LinkedInMessageViewController.h */,
+				6B7F313C19080F52009ED1EE /* LinkedInMessageViewController.m */,
+			);
+			name = LinkedIn;
+			sourceTree = "<group>";
+		};
 		6B8BC2F818CE989F006539A1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +183,7 @@
 		6B9F00671897569F005BB743 /* KlussBusinesssCard */ = {
 			isa = PBXGroup;
 			children = (
+				6B7F313A19080DA3009ED1EE /* LinkedIn */,
 				6B8BC2F818CE989F006539A1 /* Helpers */,
 				443F7A1618C5040300EC4C6F /* Business Card Layout */,
 				6B22E34618C41A3600C38B91 /* About Me */,
@@ -390,6 +403,7 @@
 				6B9F00EC18B43E1E005BB743 /* WorkProfileTableViewController.m in Sources */,
 				6B9F00A218A32E50005BB743 /* SideProjectViewController.m in Sources */,
 				6B9F009C189DD122005BB743 /* ContactsViewController.m in Sources */,
+				6B7F313D19080F52009ED1EE /* LinkedInMessageViewController.m in Sources */,
 				6B22E34318C3FDD300C38B91 /* WorkProfileDetailViewController.m in Sources */,
 				6B8BC2FB18CE98CC006539A1 /* BusinessCardMailViewController.m in Sources */,
 				6B9F006E1897569F005BB743 /* main.m in Sources */,
