@@ -41,21 +41,20 @@
     arguments[@"body"] = self.messageTextView.text;
     arguments[@"itemContent"] = @{@"invitationRequest": @{@"connectType": @"friend"}};
     
+    self.client.requestSerializer = [AFJSONRequestSerializer new];
     [self.client.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    
-    NSData *dataArgs = [NSJSONSerialization dataWithJSONObject:arguments options:NSJSONWritingPrettyPrinted error:nil];
+
+    self.client.responseSerializer = [AFHTTPResponseSerializer new];
 
     NSString *urlString = [NSString stringWithFormat:@"https://api.linkedin.com/v1/people/~/mailbox?oauth2_access_token=%@", self.linkedInAccessCode];
-    [self.client POST:urlString parameters:dataArgs success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [self.navigationController popViewControllerAnimated:YES];
-
+    [self.client POST:urlString parameters:arguments success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Request sent");
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (error) {
             NSLog(@"%@", error.localizedDescription);
         }
-        [self.navigationController popViewControllerAnimated:YES];
-
     }];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

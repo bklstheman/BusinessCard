@@ -576,7 +576,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hello William,  I'd like to add you to my network on LinkedIn from your application!   " translatesAutoresizingMaskIntoConstraints="NO" id="lbt-od-2wH">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hello William! I would like to my network." translatesAutoresizingMaskIntoConstraints="NO" id="lbt-od-2wH">
                                 <rect key="frame" x="0.0" y="65" width="320" height="224"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
