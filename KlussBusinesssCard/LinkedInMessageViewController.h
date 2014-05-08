@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <LIALinkedInHttpClient.h>
+#import "KlussBusinessBaseViewController.h"
 
-@interface LinkedInMessageViewController : UIViewController <UITextViewDelegate>
+@interface LinkedInMessageViewController : KlussBusinessBaseViewController <UITextViewDelegate>
 
 @property (weak, nonatomic) NSString *linkedInAccessCode;
 @property (strong, nonatomic) LIALinkedInHttpClient *client;

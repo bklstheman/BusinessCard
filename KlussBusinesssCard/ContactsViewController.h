@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KlussBusinessBaseViewController.h"
 
-@interface ContactsViewController : UIViewController
+@interface ContactsViewController : KlussBusinessBaseViewController
 
 @end

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KlussBusinessBaseViewController.h"
 
-@interface WorkProfileDetailViewController : UIViewController
+@interface WorkProfileDetailViewController : KlussBusinessBaseViewController
 
 @property (strong, nonatomic) NSMutableArray *accomplishments;
 @property (strong, nonatomic) NSString *jobDescription;

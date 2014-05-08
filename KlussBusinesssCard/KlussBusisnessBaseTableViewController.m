@@ -16,7 +16,7 @@
 
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
-        [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"businessCardLandscape"] animated:YES];
+        [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"businessCardLandscape"] animated:NO];
     }
 }
 

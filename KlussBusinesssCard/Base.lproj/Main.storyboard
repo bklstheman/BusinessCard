@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-670" y="-265"/>
         </scene>
-        <!--Table View Controller - About Me-->
+        <!--About Me Table View Controller - About Me-->
         <scene sceneID="ICW-gD-qOS">
             <objects>
-                <tableViewController id="2zh-lX-ctb" sceneMemberID="viewController">
+                <tableViewController id="2zh-lX-ctb" customClass="AboutMeTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="UR4-ce-g1g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
