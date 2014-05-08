@@ -19,15 +19,6 @@
 
 @implementation WorkProfileTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,12 +33,6 @@
         WorkProfile *workProfile = [[WorkProfile alloc]initFromDictonary:workProfileInfo];
         [self.workProfiles addObject:workProfile];
     }
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -76,7 +61,6 @@
     
     return cell;
 }
-
 
 #pragma mark - Navigation
 

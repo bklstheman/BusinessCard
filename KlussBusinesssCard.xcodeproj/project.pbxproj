@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6B22E34318C3FDD300C38B91 /* WorkProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B22E34218C3FDD300C38B91 /* WorkProfileDetailViewController.m */; };
 		6B7F313D19080F52009ED1EE /* LinkedInMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F313C19080F52009ED1EE /* LinkedInMessageViewController.m */; };
+		6B7F3143191B0A6A009ED1EE /* KlussBusinessBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F3142191B0A6A009ED1EE /* KlussBusinessBaseViewController.m */; };
+		6B7F3146191B0A9C009ED1EE /* KlussBusisnessBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F3145191B0A9C009ED1EE /* KlussBusisnessBaseTableViewController.m */; };
 		6B8BC2F718C57193006539A1 /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */; };
 		6B8BC2FB18CE98CC006539A1 /* BusinessCardMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2FA18CE98CC006539A1 /* BusinessCardMailViewController.m */; };
 		6B8BC2FE18CEA24B006539A1 /* ContactHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2FD18CEA24B006539A1 /* ContactHelper.m */; };
@@ -50,6 +52,10 @@
 		6B22E34218C3FDD300C38B91 /* WorkProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkProfileDetailViewController.m; sourceTree = "<group>"; };
 		6B7F313B19080F52009ED1EE /* LinkedInMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInMessageViewController.h; sourceTree = "<group>"; };
 		6B7F313C19080F52009ED1EE /* LinkedInMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedInMessageViewController.m; sourceTree = "<group>"; };
+		6B7F3141191B0A6A009ED1EE /* KlussBusinessBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KlussBusinessBaseViewController.h; sourceTree = "<group>"; };
+		6B7F3142191B0A6A009ED1EE /* KlussBusinessBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KlussBusinessBaseViewController.m; sourceTree = "<group>"; };
+		6B7F3144191B0A9C009ED1EE /* KlussBusisnessBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KlussBusisnessBaseTableViewController.h; sourceTree = "<group>"; };
+		6B7F3145191B0A9C009ED1EE /* KlussBusisnessBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KlussBusisnessBaseTableViewController.m; sourceTree = "<group>"; };
 		6B8BC2F518C57193006539A1 /* BusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardViewController.h; sourceTree = "<group>"; };
 		6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardViewController.m; sourceTree = "<group>"; };
 		6B8BC2F918CE98CC006539A1 /* BusinessCardMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardMailViewController.h; sourceTree = "<group>"; };
@@ -137,6 +143,17 @@
 			name = LinkedIn;
 			sourceTree = "<group>";
 		};
+		6B7F3140191B09A0009ED1EE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6B7F3141191B0A6A009ED1EE /* KlussBusinessBaseViewController.h */,
+				6B7F3142191B0A6A009ED1EE /* KlussBusinessBaseViewController.m */,
+				6B7F3144191B0A9C009ED1EE /* KlussBusisnessBaseTableViewController.h */,
+				6B7F3145191B0A9C009ED1EE /* KlussBusisnessBaseTableViewController.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		6B8BC2F818CE989F006539A1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +200,7 @@
 		6B9F00671897569F005BB743 /* KlussBusinesssCard */ = {
 			isa = PBXGroup;
 			children = (
+				6B7F3140191B09A0009ED1EE /* Common */,
 				6B7F313A19080DA3009ED1EE /* LinkedIn */,
 				6B8BC2F818CE989F006539A1 /* Helpers */,
 				443F7A1618C5040300EC4C6F /* Business Card Layout */,
@@ -396,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8BC2F718C57193006539A1 /* BusinessCardViewController.m in Sources */,
+				6B7F3146191B0A9C009ED1EE /* KlussBusisnessBaseTableViewController.m in Sources */,
 				6B9F00EF18B44F50005BB743 /* WorkProfileCell.m in Sources */,
 				6B8BC2FE18CEA24B006539A1 /* ContactHelper.m in Sources */,
 				6B9F00E918B31301005BB743 /* WorkProfile.m in Sources */,
@@ -403,6 +422,7 @@
 				6B9F00EC18B43E1E005BB743 /* WorkProfileTableViewController.m in Sources */,
 				6B9F00A218A32E50005BB743 /* SideProjectViewController.m in Sources */,
 				6B9F009C189DD122005BB743 /* ContactsViewController.m in Sources */,
+				6B7F3143191B0A6A009ED1EE /* KlussBusinessBaseViewController.m in Sources */,
 				6B7F313D19080F52009ED1EE /* LinkedInMessageViewController.m in Sources */,
 				6B22E34318C3FDD300C38B91 /* WorkProfileDetailViewController.m in Sources */,
 				6B8BC2FB18CE98CC006539A1 /* BusinessCardMailViewController.m in Sources */,

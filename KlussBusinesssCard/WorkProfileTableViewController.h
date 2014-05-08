@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KlussBusisnessBaseTableViewController.h"
 @class WorkProfile;
 
-@interface WorkProfileTableViewController : UITableViewController
+@interface WorkProfileTableViewController : KlussBusisnessBaseTableViewController
 @end

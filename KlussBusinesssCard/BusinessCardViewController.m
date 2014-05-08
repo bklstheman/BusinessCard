@@ -20,6 +20,17 @@
 
 @implementation BusinessCardViewController
 
+
+-(void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBarHidden = YES;
+    self.tabBarController.tabBar.hidden = YES;
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    self.navigationController.navigationBarHidden = NO;
+    self.tabBarController.tabBar.hidden = NO;
+}
+
 - (IBAction)emailLabelTapped:(UITapGestureRecognizer *)sender {
     BusinessCardMailViewController *bcMailVC = [BusinessCardMailViewController createBusinessCardMail:self];
     [self presentViewController:bcMailVC animated:YES completion:nil];
@@ -56,7 +67,14 @@
 }
 
 -(NSUInteger)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskLandscape;
+    return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight | UIInterfaceOrientationMaskPortraitUpsideDown);
+}
+
+-(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 #pragma Mail Delegate methods
