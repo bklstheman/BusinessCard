@@ -47,13 +47,13 @@
         if (self.isFranklinFace) {
             self.faceImageView.image = [UIImage imageNamed:@"facephotocard"];
             self.isFranklinFace = NO;
-            self.bussinessCardName.text = @"William Kluss";
+            self.bussinessCardName.text = @"William KLUSS";
             self.buisnessCardRole.text = @"Software Developer";
         } else {
             self.faceImageView.image = [UIImage imageNamed:@"franklinface"];
             self.isFranklinFace = YES;
             self.buisnessCardRole.text = @"Professional Puppy";
-            self.bussinessCardName.text = @"Franklin Kluss";
+            self.bussinessCardName.text = @"Franklin KLUSS";
             [self.bussinessCardName updateConstraints];
             
         }
