@@ -12,10 +12,9 @@
 
 +(void)dialBusinessPhone {
     
-    NSURL *phoneURL = [NSURL URLWithString:@"telprompt:%@2104469440"];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:phoneURL]) {
-        [[UIApplication sharedApplication]openURL:phoneURL];
+    if ([[UIDevice currentDevice].model isEqualToString:@"iPhone"]) {
+        
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:210-446-9440"]]];
     } else {
         UIAlertView *showAlert = [[UIAlertView alloc]initWithTitle:@"Not an iPhone" message:@"Sorry but this feature only works on an iPhone" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [showAlert show];
