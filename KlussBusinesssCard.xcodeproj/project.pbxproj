@@ -334,6 +334,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "William Kluss";
 				TargetAttributes = {
+					6B9F005D1897569F005BB743 = {
+						DevelopmentTeam = 9FZ6GL2KDX;
+					};
 					6B9F00811897569F005BB743 = {
 						TestTargetID = 6B9F005D1897569F005BB743;
 					};
@@ -561,10 +564,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KlussBusinesssCard/KlussBusinesssCard-Prefix.pch";
 				INFOPLIST_FILE = "KlussBusinesssCard/KlussBusinesssCard-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -576,10 +581,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KlussBusinesssCard/KlussBusinesssCard-Prefix.pch";
 				INFOPLIST_FILE = "KlussBusinesssCard/KlussBusinesssCard-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
