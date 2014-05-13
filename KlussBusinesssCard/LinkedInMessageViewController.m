@@ -8,9 +8,13 @@
 
 #import "LinkedInMessageViewController.h"
 #import "AFHTTPRequestOperation.h"
+#import "GAITracker.h"
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface LinkedInMessageViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *messageTextView;
+@property (strong, nonatomic) id<GAITracker> tracker;
 
 @end
 
@@ -20,6 +24,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.tracker = [[GAI sharedInstance] defaultTracker];
     [self.messageTextView becomeFirstResponder];
 }
 
@@ -28,6 +33,8 @@
 }
 
 - (IBAction)sendButtonPressed:(UIBarButtonItem *)sender {
+    [self.tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"linkedIn_mail" action:@"linkedInButtonPress" label:@"LinkedIn" value:nil] build]];
+    
     NSMutableDictionary *arguments = [NSMutableDictionary new];
     
     NSDictionary *person = @{@"person" : @{@"_path": @"/people/email=bklstheman2@gmail.com",

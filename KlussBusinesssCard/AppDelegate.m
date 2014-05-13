@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "GAI.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-50779171-1"];
     return YES;
 }
 							

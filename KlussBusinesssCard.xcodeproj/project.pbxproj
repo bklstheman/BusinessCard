@@ -12,6 +12,18 @@
 		6B7F3143191B0A6A009ED1EE /* KlussBusinessBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F3142191B0A6A009ED1EE /* KlussBusinessBaseViewController.m */; };
 		6B7F3146191B0A9C009ED1EE /* KlussBusisnessBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F3145191B0A9C009ED1EE /* KlussBusisnessBaseTableViewController.m */; };
 		6B7F3149191B0C86009ED1EE /* AboutMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F3148191B0C86009ED1EE /* AboutMeTableViewController.m */; };
+		6B7F315119204116009ED1EE /* GAI.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F314A19204115009ED1EE /* GAI.h */; };
+		6B7F315219204116009ED1EE /* GAIDictionaryBuilder.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F314B19204115009ED1EE /* GAIDictionaryBuilder.h */; };
+		6B7F315319204116009ED1EE /* GAIFields.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F314C19204116009ED1EE /* GAIFields.h */; };
+		6B7F315419204116009ED1EE /* GAILogger.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F314D19204116009ED1EE /* GAILogger.h */; };
+		6B7F315519204116009ED1EE /* GAITrackedViewController.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F314E19204116009ED1EE /* GAITrackedViewController.h */; };
+		6B7F315619204116009ED1EE /* GAITracker.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F314F19204116009ED1EE /* GAITracker.h */; };
+		6B7F315719204116009ED1EE /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F315019204116009ED1EE /* libGoogleAnalyticsServices.a */; };
+		6B7F315919204141009ED1EE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F315819204141009ED1EE /* CoreData.framework */; };
+		6B7F315B1920414D009ED1EE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F315A1920414D009ED1EE /* SystemConfiguration.framework */; };
+		6B7F315D19204171009ED1EE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F315C19204171009ED1EE /* AdSupport.framework */; };
+		6B7F315F19204186009ED1EE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F315E19204186009ED1EE /* libz.dylib */; };
+		6B7F3161192043C6009ED1EE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7F3160192043C6009ED1EE /* libsqlite3.dylib */; };
 		6B8BC2F718C57193006539A1 /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */; };
 		6B8BC2FB18CE98CC006539A1 /* BusinessCardMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2FA18CE98CC006539A1 /* BusinessCardMailViewController.m */; };
 		6B8BC2FE18CEA24B006539A1 /* ContactHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BC2FD18CEA24B006539A1 /* ContactHelper.m */; };
@@ -59,6 +71,18 @@
 		6B7F3145191B0A9C009ED1EE /* KlussBusisnessBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KlussBusisnessBaseTableViewController.m; sourceTree = "<group>"; };
 		6B7F3147191B0C86009ED1EE /* AboutMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeTableViewController.h; sourceTree = "<group>"; };
 		6B7F3148191B0C86009ED1EE /* AboutMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeTableViewController.m; sourceTree = "<group>"; };
+		6B7F314A19204115009ED1EE /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = ../../Downloads/GoogleAnalyticsServicesiOS_3.07/GoogleAnalytics/Library/GAI.h; sourceTree = "<group>"; };
+		6B7F314B19204115009ED1EE /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = ../../Downloads/GoogleAnalyticsServicesiOS_3.07/GoogleAnalytics/Library/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		6B7F314C19204116009ED1EE /* GAIFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = ../../Downloads/GoogleAnalyticsServicesiOS_3.07/GoogleAnalytics/Library/GAIFields.h; sourceTree = "<group>"; };
+		6B7F314D19204116009ED1EE /* GAILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = ../../Downloads/GoogleAnalyticsServicesiOS_3.07/GoogleAnalytics/Library/GAILogger.h; sourceTree = "<group>"; };
+		6B7F314E19204116009ED1EE /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = ../../Downloads/GoogleAnalyticsServicesiOS_3.07/GoogleAnalytics/Library/GAITrackedViewController.h; sourceTree = "<group>"; };
+		6B7F314F19204116009ED1EE /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = ../../Downloads/GoogleAnalyticsServicesiOS_3.07/GoogleAnalytics/Library/GAITracker.h; sourceTree = "<group>"; };
+		6B7F315019204116009ED1EE /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = ../../Downloads/GoogleAnalyticsServicesiOS_3.07/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		6B7F315819204141009ED1EE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6B7F315A1920414D009ED1EE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6B7F315C19204171009ED1EE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		6B7F315E19204186009ED1EE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6B7F3160192043C6009ED1EE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		6B8BC2F518C57193006539A1 /* BusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardViewController.h; sourceTree = "<group>"; };
 		6B8BC2F618C57193006539A1 /* BusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardViewController.m; sourceTree = "<group>"; };
 		6B8BC2F918CE98CC006539A1 /* BusinessCardMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardMailViewController.h; sourceTree = "<group>"; };
@@ -101,6 +125,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B7F3161192043C6009ED1EE /* libsqlite3.dylib in Frameworks */,
+				6B7F315F19204186009ED1EE /* libz.dylib in Frameworks */,
+				6B7F315D19204171009ED1EE /* AdSupport.framework in Frameworks */,
+				6B7F315B1920414D009ED1EE /* SystemConfiguration.framework in Frameworks */,
+				6B7F315919204141009ED1EE /* CoreData.framework in Frameworks */,
+				6B7F315119204116009ED1EE /* GAI.h in Frameworks */,
+				6B7F315219204116009ED1EE /* GAIDictionaryBuilder.h in Frameworks */,
+				6B7F315319204116009ED1EE /* GAIFields.h in Frameworks */,
+				6B7F315419204116009ED1EE /* GAILogger.h in Frameworks */,
+				6B7F315519204116009ED1EE /* GAITrackedViewController.h in Frameworks */,
+				6B7F315619204116009ED1EE /* GAITracker.h in Frameworks */,
+				6B7F315719204116009ED1EE /* libGoogleAnalyticsServices.a in Frameworks */,
 				6B9F00641897569F005BB743 /* CoreGraphics.framework in Frameworks */,
 				6B9F00661897569F005BB743 /* UIKit.framework in Frameworks */,
 				6B9F00621897569F005BB743 /* Foundation.framework in Frameworks */,
@@ -193,6 +229,18 @@
 		6B9F00601897569F005BB743 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B7F3160192043C6009ED1EE /* libsqlite3.dylib */,
+				6B7F315E19204186009ED1EE /* libz.dylib */,
+				6B7F315C19204171009ED1EE /* AdSupport.framework */,
+				6B7F315A1920414D009ED1EE /* SystemConfiguration.framework */,
+				6B7F315819204141009ED1EE /* CoreData.framework */,
+				6B7F314A19204115009ED1EE /* GAI.h */,
+				6B7F314B19204115009ED1EE /* GAIDictionaryBuilder.h */,
+				6B7F314C19204116009ED1EE /* GAIFields.h */,
+				6B7F314D19204116009ED1EE /* GAILogger.h */,
+				6B7F314E19204116009ED1EE /* GAITrackedViewController.h */,
+				6B7F314F19204116009ED1EE /* GAITracker.h */,
+				6B7F315019204116009ED1EE /* libGoogleAnalyticsServices.a */,
 				6B9F00611897569F005BB743 /* Foundation.framework */,
 				6B9F00631897569F005BB743 /* CoreGraphics.framework */,
 				6B9F00651897569F005BB743 /* UIKit.framework */,
@@ -570,6 +618,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KlussBusinesssCard/KlussBusinesssCard-Prefix.pch";
 				INFOPLIST_FILE = "KlussBusinesssCard/KlussBusinesssCard-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/will2k/Downloads/GoogleAnalyticsServicesiOS_3.07,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -587,6 +639,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KlussBusinesssCard/KlussBusinesssCard-Prefix.pch";
 				INFOPLIST_FILE = "KlussBusinesssCard/KlussBusinesssCard-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/will2k/Downloads/GoogleAnalyticsServicesiOS_3.07,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

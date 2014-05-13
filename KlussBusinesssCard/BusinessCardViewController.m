@@ -9,6 +9,9 @@
 #import "BusinessCardViewController.h"
 #import "BusinessCardMailViewController.h"
 #import "ContactHelper.h"
+#import "GAITracker.h"
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface BusinessCardViewController ()<MFMailComposeViewControllerDelegate>
 
@@ -16,10 +19,16 @@
 @property (weak, nonatomic) IBOutlet UILabel *bussinessCardName;
 @property (weak, nonatomic) IBOutlet UILabel *buisnessCardRole;
 @property BOOL isFranklinFace;
+@property (strong, nonatomic) id<GAITracker> tracker;
+
 @end
 
 @implementation BusinessCardViewController
 
+-(void)viewDidLoad {
+    self.tracker = [[GAI sharedInstance] defaultTracker];
+   
+}
 
 -(void)viewWillAppear:(BOOL)animated {
     self.navigationController.navigationBarHidden = YES;
@@ -32,15 +41,17 @@
 }
 
 - (IBAction)emailLabelTapped:(UITapGestureRecognizer *)sender {
+    [self.tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"card_mail" action:@"mailButtonPress" label:@"Mail" value:nil] build]];
     BusinessCardMailViewController *bcMailVC = [BusinessCardMailViewController createBusinessCardMail:self];
     [self presentViewController:bcMailVC animated:YES completion:nil];
 }
 - (IBAction)phoneLabelTApped:(id)sender {
+    [self.tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"card_phone" action:@"phoneButtonPress" label:@"Phone" value:nil] build]];
     [ContactHelper dialBusinessPhone];
 }
 
 - (IBAction)faceImageTapped:(UITapGestureRecognizer *)sender {
-    NSLog(@"Face image tapped");
+    [self.tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"face_image" action:@"faceImagePressed" label:@"Face" value:nil] build]];
 
     [UIView animateWithDuration:0.5 animations:^{
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.faceImageView cache:YES];
