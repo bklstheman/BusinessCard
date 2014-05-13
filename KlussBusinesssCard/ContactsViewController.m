@@ -59,7 +59,6 @@
         [self.client getAuthorizationCode:^(NSString *code) {
             [self.client getAccessToken:code success:^(NSDictionary *accessTokenData) {
                 NSString *accessToken = accessTokenData[@"access_token"];
-                //[self requestMeWithToken:accessToken];
                 //Get the users info and send that to the linkedin messager
                 LinkedInMessageViewController *linkedInMessageVC = [self.storyboard instantiateViewControllerWithIdentifier:@"linkedInMessageView"];
                 linkedInMessageVC.client = self.client;
@@ -73,16 +72,6 @@
         } failure:^(NSError *error) {
             NSLog(@"Authorization failed %@", error);
         }];
-}
-
-- (void)requestMeWithToken:(NSString *)accessToken {
-
-    [self.client GET:[NSString stringWithFormat:@"https://api.linkedin.com/v1/people/~?oauth2_access_token=%@&format=json", accessToken] parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *result) {
-        self.linkedUser = result;
-        NSLog(@"current user %@", result);
-    }        failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"failed to fetch current user %@", error);
-    }];
 }
 
 #pragma Mail Delegate methods
