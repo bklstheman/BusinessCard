@@ -326,13 +326,13 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="San Antonio, TX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqN-lZ-n33">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Antonio, TX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqN-lZ-n33">
                                 <rect key="frame" x="439" y="299" width="124" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="klussdevelopment@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nww-ur-3yR">
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="klussdevelopment@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nww-ur-3yR">
                                 <rect key="frame" x="3" y="299" width="233" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -351,11 +351,14 @@
                                     <outletCollection property="gestureRecognizers" destination="gIl-71-rzl" appends="YES" id="gZG-Ov-xlv"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(210) 446-9440" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvC-CJ-5l6">
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(210) 446-9440" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvC-CJ-5l6">
                                 <rect key="frame" x="3" y="279" width="120" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="0.5215686559677124" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="i0P-id-tWs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.4901961088180542" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
@@ -366,9 +369,17 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="nww-ur-3yR" firstAttribute="leading" secondItem="pvC-CJ-5l6" secondAttribute="leading" id="06c-04-86z"/>
+                            <constraint firstAttribute="bottom" secondItem="nww-ur-3yR" secondAttribute="bottom" id="39s-7h-dRY"/>
+                            <constraint firstAttribute="trailing" secondItem="DqN-lZ-n33" secondAttribute="trailing" constant="5" id="5vN-Ai-F7L"/>
+                            <constraint firstItem="nww-ur-3yR" firstAttribute="leading" secondItem="sxF-S0-6RT" secondAttribute="leading" constant="3" id="G3a-yy-RfL"/>
                             <constraint firstItem="fmY-28-uwH" firstAttribute="leading" secondItem="sxF-S0-6RT" secondAttribute="leading" constant="226" id="P0Q-NP-GZV"/>
+                            <constraint firstItem="pvC-CJ-5l6" firstAttribute="leading" secondItem="sxF-S0-6RT" secondAttribute="leading" constant="3" id="WGE-IP-7kI"/>
                             <constraint firstItem="1PM-y6-hmc" firstAttribute="top" secondItem="fmY-28-uwH" secondAttribute="bottom" constant="8" symbolic="YES" id="WU6-UJ-rtB"/>
                             <constraint firstItem="fmY-28-uwH" firstAttribute="top" secondItem="GkM-D2-aGS" secondAttribute="bottom" constant="90" id="gir-xa-ezR"/>
+                            <constraint firstItem="DqN-lZ-n33" firstAttribute="leading" secondItem="nww-ur-3yR" secondAttribute="trailing" priority="250" constant="203" id="nT5-fD-EIL"/>
+                            <constraint firstAttribute="bottom" secondItem="pvC-CJ-5l6" secondAttribute="bottom" constant="20" symbolic="YES" id="oif-r0-D1T"/>
+                            <constraint firstItem="nww-ur-3yR" firstAttribute="baseline" secondItem="DqN-lZ-n33" secondAttribute="baseline" id="omf-HM-QUI"/>
                             <constraint firstItem="fmY-28-uwH" firstAttribute="centerX" secondItem="1PM-y6-hmc" secondAttribute="centerX" id="qvY-sw-yfa"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
