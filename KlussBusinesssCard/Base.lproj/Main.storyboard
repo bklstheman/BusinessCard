@@ -500,39 +500,80 @@
             <objects>
                 <viewController id="vOg-jI-BnT" customClass="SideProjectViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yPR-wl-IEx"/>
-                        <viewControllerLayoutGuide type="bottom" id="azO-7j-I1N"/>
+                        <viewControllerLayoutGuide type="top" id="N5I-qR-Ff4"/>
+                        <viewControllerLayoutGuide type="bottom" id="gqX-dJ-nNa"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="J5j-tM-va9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gOJ-6I-XqA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabletopic-icon" translatesAutoresizingMaskIntoConstraints="NO" id="GmW-uu-7sR">
-                                <rect key="frame" x="20" y="71" width="114" height="114"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabletopic-icon" translatesAutoresizingMaskIntoConstraints="NO" id="GmW-uu-7sR">
+                                <rect key="frame" x="7" y="72" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="7d8-WU-Ggi"/>
+                                    <constraint firstAttribute="width" constant="120" id="HvJ-JQ-eGd"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="bDs-Ej-MY8" appends="YES" id="U9z-b5-CHb"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Table Topics Free" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dht-hY-gvn">
-                                <rect key="frame" x="139" y="117" width="161" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table Topics Free" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dht-hY-gvn">
+                                <rect key="frame" x="142" y="121" width="161" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-ai-ehw">
-                                <rect key="frame" x="20" y="189" width="291" height="200"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-ai-ehw">
+                                <rect key="frame" x="20" y="200" width="291" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">I built this for my work's Toastmaster group. Toastmaster's will randomly call on someone and ask them a random table topic. From there the person has to talk for a minute about it. I created an app that will allow someone to create topics/people and the app will randomly select a topic and person. Table Topics has recently been upgrade for iOS 7! Its been given a new UI and some new features. Tap the icon to take a look.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drinkx" translatesAutoresizingMaskIntoConstraints="NO" id="0kI-qK-azR">
+                                <rect key="frame" x="20" y="443" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wR3-bv-XvO" appends="YES" id="ryJ-uu-D3B"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not Another Drink App" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="163" translatesAutoresizingMaskIntoConstraints="NO" id="Apb-Tg-ygR">
+                                <rect key="frame" x="148" y="477" width="163" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bse-hO-suk">
+                                <rect key="frame" x="20" y="583" width="291" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Yep, it's another drink finding app. Apple just released their new programming language Swift. I wanted to give it a try so I developed this drink app. I also wanted to mess a bit with some of the Core Data features. Click on the icon to look at the source code. One day I might release this on the app store but this was really just for me to practice a few new things</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                    </view>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B5g-ai-ehw" firstAttribute="leading" secondItem="gOJ-6I-XqA" secondAttribute="leading" constant="20" symbolic="YES" id="1H3-Hq-nnY"/>
+                            <constraint firstAttribute="trailing" secondItem="B5g-ai-ehw" secondAttribute="trailing" constant="9" id="1oX-RR-tsx"/>
+                            <constraint firstItem="Dht-hY-gvn" firstAttribute="leading" secondItem="GmW-uu-7sR" secondAttribute="trailing" constant="15" id="6b5-go-0hj"/>
+                            <constraint firstItem="B5g-ai-ehw" firstAttribute="top" secondItem="GmW-uu-7sR" secondAttribute="bottom" constant="8" symbolic="YES" id="8h0-r7-gPR"/>
+                            <constraint firstAttribute="trailing" secondItem="GmW-uu-7sR" secondAttribute="trailing" constant="193" id="Bm8-aX-yo7"/>
+                            <constraint firstAttribute="trailing" secondItem="Dht-hY-gvn" secondAttribute="trailing" constant="17" id="ENt-Zx-gEN"/>
+                            <constraint firstItem="GmW-uu-7sR" firstAttribute="leading" secondItem="gOJ-6I-XqA" secondAttribute="leading" constant="7" id="Jyv-QN-zfT"/>
+                            <constraint firstItem="Dht-hY-gvn" firstAttribute="top" secondItem="N5I-qR-Ff4" secondAttribute="bottom" constant="57" id="SWz-u5-alo"/>
+                            <constraint firstAttribute="bottom" secondItem="GmW-uu-7sR" secondAttribute="bottom" constant="608" id="fAW-Kt-bro"/>
+                            <constraint firstItem="gqX-dJ-nNa" firstAttribute="top" secondItem="B5g-ai-ehw" secondAttribute="bottom" constant="351" id="fFl-RG-Cwb"/>
+                            <constraint firstItem="GmW-uu-7sR" firstAttribute="top" secondItem="N5I-qR-Ff4" secondAttribute="bottom" constant="8" id="w3F-XG-hvt"/>
+                        </constraints>
+                    </scrollView>
                     <navigationItem key="navigationItem" title="Side Projects" id="bfc-k1-eZ8"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="800"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNt-DK-F2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="bDs-Ej-MY8">
@@ -541,8 +582,13 @@
                         <outlet property="delegate" destination="vOg-jI-BnT" id="iGC-eX-e1j"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="wR3-bv-XvO">
+                    <connections>
+                        <action selector="drinkXImageTapped:" destination="vOg-jI-BnT" id="ZJb-K0-Lds"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="630" y="338"/>
+            <point key="canvasLocation" x="628" y="90"/>
         </scene>
         <!--Navigation Controller - Work History-->
         <scene sceneID="aB2-px-qRN">
@@ -685,6 +731,7 @@
         <image name="aboutme" width="30" height="30"/>
         <image name="batmanlogom" width="50" height="50"/>
         <image name="contact" width="30" height="30"/>
+        <image name="drinkx" width="60" height="60"/>
         <image name="facephotocard" width="100" height="100"/>
         <image name="sideprojects" width="30" height="30"/>
         <image name="tabletopic-icon" width="60" height="60"/>
