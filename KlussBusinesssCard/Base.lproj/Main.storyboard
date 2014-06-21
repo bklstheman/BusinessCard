@@ -523,9 +523,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-ai-ehw">
-                                <rect key="frame" x="20" y="189" width="291" height="185"/>
+                                <rect key="frame" x="20" y="189" width="291" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">I built this for my work's Toastmaster group. Toastmaster's will randomly call on someone and ask them a random table topic. From there the person has to talk for a minute about it. I created an app that will allow someone to create topics/people and the app will randomly select a topic and person. It was developed in iOS 6 and hasn't been upgraded. I'll be working on that sometime this year</string>
+                                <string key="text">I built this for my work's Toastmaster group. Toastmaster's will randomly call on someone and ask them a random table topic. From there the person has to talk for a minute about it. I created an app that will allow someone to create topics/people and the app will randomly select a topic and person. Table Topics has recently been upgrade for iOS 7! Its been given a new UI and some new features. Tap the icon to take a look.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -687,7 +687,7 @@
         <image name="contact" width="30" height="30"/>
         <image name="facephotocard" width="100" height="100"/>
         <image name="sideprojects" width="30" height="30"/>
-        <image name="tabletopic-icon" width="57" height="57"/>
+        <image name="tabletopic-icon" width="60" height="60"/>
         <image name="work" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
