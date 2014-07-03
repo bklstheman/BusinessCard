@@ -17,8 +17,10 @@
 #import "GAIDictionaryBuilder.h"
 
 @import MessageUI;
+@import AddressBookUI;
+@import AddressBook;
 
-@interface ContactsViewController ()<MFMailComposeViewControllerDelegate>
+@interface ContactsViewController ()<MFMailComposeViewControllerDelegate, ABUnknownPersonViewControllerDelegate>
 
 @property (strong, nonatomic) LIALinkedInHttpClient *client;
 @property (weak, nonatomic) NSDictionary *linkedUser;
@@ -75,8 +77,65 @@
 }
 
 - (IBAction)addWorkContactToPhone:(UIButton *)sender {
+    ABRecordRef klussContact = ABPersonCreate();
+    
+    //Set first name
+    ABRecordSetValue(klussContact, kABPersonFirstNameProperty, CFSTR("William"), nil);
+    //Set last name
+    ABRecordSetValue(klussContact, kABPersonLastNameProperty, CFSTR("Kluss"), nil);
+    //Set email
+    ABRecordSetValue(klussContact, kABPersonEmailProperty, CFSTR("klussdevelopment@gmail.com"), nil);
+    //Set phone number
+    ABMutableMultiValueRef phoneNumberMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+    ABMultiValueAddValueAndLabel(phoneNumberMultiValue, @"(210) 446-9440", kABPersonPhoneMainLabel, NULL);
+    ABRecordSetValue(klussContact, kABPersonPhoneProperty, phoneNumberMultiValue, nil);
+    CFRelease(phoneNumberMultiValue);
+    
+    //Set itunes URL for my work
+    ABMutableMultiValueRef urlMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+    ABMultiValueAddValueAndLabel(urlMultiValue, @"https://itunes.apple.com/us/artist/william-kluss/id648137047",
+                                 kABPersonHomePageLabel, NULL);
+    ABRecordSetValue(klussContact, kABPersonURLProperty, urlMultiValue, nil);
+    CFRelease(urlMultiValue);
+    
+    ABUnknownPersonViewController *unknownPersonVC = [[ABUnknownPersonViewController alloc] init];
+    
+    unknownPersonVC.displayedPerson = klussContact;
+    unknownPersonVC.allowsAddingToAddressBook = YES;
+    unknownPersonVC.unknownPersonViewDelegate = self;
+    
+    [self.navigationController pushViewController:unknownPersonVC animated:YES];
+    
+    CFRelease(klussContact);
+}
+
+-(void)unknownPersonViewController:(ABUnknownPersonViewController *)unknownCardViewController didResolveToPerson:(ABRecordRef)person {
     
 }
+
+/*
+ // create person record
+ 
+ ABRecordRef person = ABPersonCreate();
+ 
+ // set name and other string values
+ 
+ ABRecordSetValue(person, kABPersonOrganizationProperty, (__bridge CFStringRef) venueName, NULL);
+ 
+ 
+ // let's show view controller
+ 
+ ABUnknownPersonViewController *controller = [[ABUnknownPersonViewController alloc] init];
+ 
+ controller.displayedPerson = person;
+ controller.allowsAddingToAddressBook = YES;
+ 
+ // current view must have a navigation controller
+ 
+ [self.navigationController pushViewController:controller animated:YES];
+ 
+ CFRelease(person);
+ */
 
 #pragma Mail Delegate methods
 
