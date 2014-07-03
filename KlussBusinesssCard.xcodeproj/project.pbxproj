@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B166BDA1965BCA700BD0BC1 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B166BD81965BCA700BD0BC1 /* AddressBook.framework */; };
+		6B166BDB1965BCA700BD0BC1 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B166BD91965BCA700BD0BC1 /* AddressBookUI.framework */; };
 		6B22E34318C3FDD300C38B91 /* WorkProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B22E34218C3FDD300C38B91 /* WorkProfileDetailViewController.m */; };
 		6B7F313D19080F52009ED1EE /* LinkedInMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F313C19080F52009ED1EE /* LinkedInMessageViewController.m */; };
 		6B7F3143191B0A6A009ED1EE /* KlussBusinessBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F3142191B0A6A009ED1EE /* KlussBusinessBaseViewController.m */; };
@@ -61,6 +63,8 @@
 
 /* Begin PBXFileReference section */
 		2B2B707EF2C14E7C852317E5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B166BD81965BCA700BD0BC1 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		6B166BD91965BCA700BD0BC1 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		6B22E34118C3FDD300C38B91 /* WorkProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkProfileDetailViewController.h; sourceTree = "<group>"; };
 		6B22E34218C3FDD300C38B91 /* WorkProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkProfileDetailViewController.m; sourceTree = "<group>"; };
 		6B7F313B19080F52009ED1EE /* LinkedInMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInMessageViewController.h; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B166BDA1965BCA700BD0BC1 /* AddressBook.framework in Frameworks */,
+				6B166BDB1965BCA700BD0BC1 /* AddressBookUI.framework in Frameworks */,
 				6B7F3161192043C6009ED1EE /* libsqlite3.dylib in Frameworks */,
 				6B7F315F19204186009ED1EE /* libz.dylib in Frameworks */,
 				6B7F315D19204171009ED1EE /* AdSupport.framework in Frameworks */,
@@ -229,6 +235,8 @@
 		6B9F00601897569F005BB743 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B166BD81965BCA700BD0BC1 /* AddressBook.framework */,
+				6B166BD91965BCA700BD0BC1 /* AddressBookUI.framework */,
 				6B7F3160192043C6009ED1EE /* libsqlite3.dylib */,
 				6B7F315E19204186009ED1EE /* libz.dylib */,
 				6B7F315C19204171009ED1EE /* AdSupport.framework */,
