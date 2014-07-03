@@ -74,6 +74,10 @@
         }];
 }
 
+- (IBAction)addWorkContactToPhone:(UIButton *)sender {
+    
+}
+
 #pragma Mail Delegate methods
 
 -(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
