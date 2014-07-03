@@ -498,7 +498,7 @@
         <!--Side Project View Controller - Side Projects-->
         <scene sceneID="udJ-5T-bfk">
             <objects>
-                <viewController id="vOg-jI-BnT" customClass="SideProjectViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vOg-jI-BnT" customClass="SideProjectViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N5I-qR-Ff4"/>
                         <viewControllerLayoutGuide type="bottom" id="gqX-dJ-nNa"/>
@@ -565,7 +565,7 @@
                             <constraint firstAttribute="trailing" secondItem="GmW-uu-7sR" secondAttribute="trailing" constant="193" id="Bm8-aX-yo7"/>
                             <constraint firstAttribute="trailing" secondItem="Dht-hY-gvn" secondAttribute="trailing" constant="17" id="ENt-Zx-gEN"/>
                             <constraint firstItem="GmW-uu-7sR" firstAttribute="leading" secondItem="gOJ-6I-XqA" secondAttribute="leading" constant="7" id="Jyv-QN-zfT"/>
-                            <constraint firstItem="Dht-hY-gvn" firstAttribute="top" secondItem="N5I-qR-Ff4" secondAttribute="bottom" constant="57" id="SWz-u5-alo"/>
+                            <constraint firstItem="Dht-hY-gvn" firstAttribute="top" secondItem="N5I-qR-Ff4" secondAttribute="bottom" constant="57" id="Qru-cf-7Kd"/>
                             <constraint firstAttribute="bottom" secondItem="GmW-uu-7sR" secondAttribute="bottom" constant="608" id="fAW-Kt-bro"/>
                             <constraint firstItem="gqX-dJ-nNa" firstAttribute="top" secondItem="B5g-ai-ehw" secondAttribute="bottom" constant="351" id="fFl-RG-Cwb"/>
                             <constraint firstItem="GmW-uu-7sR" firstAttribute="top" secondItem="N5I-qR-Ff4" secondAttribute="bottom" constant="8" id="w3F-XG-hvt"/>
