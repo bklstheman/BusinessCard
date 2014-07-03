@@ -20,7 +20,7 @@
 @import AddressBookUI;
 @import AddressBook;
 
-@interface ContactsViewController ()<MFMailComposeViewControllerDelegate, ABUnknownPersonViewControllerDelegate>
+@interface ContactsViewController ()<MFMailComposeViewControllerDelegate>
 
 @property (strong, nonatomic) LIALinkedInHttpClient *client;
 @property (weak, nonatomic) NSDictionary *linkedUser;
@@ -84,7 +84,11 @@
     //Set last name
     ABRecordSetValue(klussContact, kABPersonLastNameProperty, CFSTR("Kluss"), nil);
     //Set email
-    ABRecordSetValue(klussContact, kABPersonEmailProperty, CFSTR("klussdevelopment@gmail.com"), nil);
+    ABMutableMultiValueRef multiEmail = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+    ABMultiValueAddValueAndLabel(multiEmail, @"klussdevelopment@gmail.com", kABWorkLabel, NULL);
+    ABRecordSetValue(klussContact, kABPersonEmailProperty, multiEmail, nil);
+    CFRelease(multiEmail);
+    
     //Set phone number
     ABMutableMultiValueRef phoneNumberMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);
     ABMultiValueAddValueAndLabel(phoneNumberMultiValue, @"(210) 446-9440", kABPersonPhoneMainLabel, NULL);
@@ -102,40 +106,11 @@
     
     unknownPersonVC.displayedPerson = klussContact;
     unknownPersonVC.allowsAddingToAddressBook = YES;
-    unknownPersonVC.unknownPersonViewDelegate = self;
     
     [self.navigationController pushViewController:unknownPersonVC animated:YES];
     
     CFRelease(klussContact);
 }
-
--(void)unknownPersonViewController:(ABUnknownPersonViewController *)unknownCardViewController didResolveToPerson:(ABRecordRef)person {
-    
-}
-
-/*
- // create person record
- 
- ABRecordRef person = ABPersonCreate();
- 
- // set name and other string values
- 
- ABRecordSetValue(person, kABPersonOrganizationProperty, (__bridge CFStringRef) venueName, NULL);
- 
- 
- // let's show view controller
- 
- ABUnknownPersonViewController *controller = [[ABUnknownPersonViewController alloc] init];
- 
- controller.displayedPerson = person;
- controller.allowsAddingToAddressBook = YES;
- 
- // current view must have a navigation controller
- 
- [self.navigationController pushViewController:controller animated:YES];
- 
- CFRelease(person);
- */
 
 #pragma Mail Delegate methods
 
